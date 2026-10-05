@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Landing Page</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <section>
+            <p><strong>Events Hub</strong></p>
+            
+            <!-- navigation section -->
+            <nav>
+                <p>Menu</p>
+                    <div>
+                    <a href="#hero" >Home</a><br>
+                    <a href="#events">Events</a><br>
+                    <a href="#register-form">Register</a><br>
+                    <a href="#contact">Contact us</a><br>
+                    </div>
+            </nav>
+
+        </section>
+    </header>
+
+    <!-- Main section -->
+    <main >
+
+        <!-- Hero section -->
+        <section id="hero">
+            <h1>Welcome To Events Hub!</h1>
+            <p><b>All your upcoming workshops & talks in one place.</b><br>Explore the schedule below and reserve your seat.</p>
+        </section>
+
+        <!-- Event Schedule section -->
+        <section id="events">
+            <h2>You can see all Events here :</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <tr>
+                    <th>Topic</th>
+                    <th>Speaker</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Registration link</th>
+                </tr>
+                <tr>
+                    <td>The Art of Public Speaking: How to Pitch Ideas with Confidence</td>
+                    <td>Reem Mohammed</td>
+                    <td> 13 sep 2026</td>
+                    <td>6:30 PM</td>
+                    <td><a href="#register-form">Register now</a></td>
+                </tr>
+                <tr>
+                    <td>Mobile Photography & Visual Storytelling: Capturing Cinematic Shots with Your Phone</td>
+                    <td>Omar Fahad</td>
+                    <td> 14 sep 2026</td>
+                    <td>5:30 PM</td>
+                    <td><a href="#register-form">Register now</a></td>
+                </tr>
+                <tr>
+                    <td>Acrylic Painting Workshop</td>
+                    <td>Faisal AL-Sami</td>
+                    <td> 15 sep 2026</td>
+                    <td>8:00 PM</td>
+                    <td><a href="#register-form">Register now</a></td>
+                </tr>
+                <tr>
+                    <td>AI for Creators: Automate Your Workflow & Supercharge Ideas</td>
+                    <td>Khaled Al-Otaibi</td>
+                    <td> 16 sep 2026</td>
+                    <td>6:30 PM</td>
+                    <td><a href="#register-form">Register now</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Registration section -->
+        <section id="register-form">
+            <h2>Registration form</h2>
+            <div>
+                <form action="register.php" method="post">
+                    <!-- Select Event -->
+                    <label for="selected-event">Choose Event:</label><br>
+                    <select id="selected-event" name="event" required>
+                        <option value="">-- Please select an event --</option>
+                        <option value="creator">The Art of Public Speaking: How to Pitch Ideas with Confidence (13 Sep)</option>
+                        <option value="actor">Mobile Photography & Visual Storytelling: Capturing Cinematic Shots with Your Phone (14 Sep)</option>
+                        <option value="painting">Acrylic Painting Workshop (15 Sep)</option>
+                        <option value="problem-solving">AI for Creators: Automate Your Workflow & Supercharge Ideas (16 Sep)</option>
+                    </select><br><br>
+
+                    <!-- user name -->
+                    <label for="username">User name :</label><br>
+                    <input type="text" id="username" name="username" required><br><br>
+                    
+                    <!-- phone number -->
+                    <label for="phoneNum">Phone number :</label><br>
+                    <input type="tel" maxlength="15" id="phoneNum" name="phoneNum" placeholder="e.g. +966 50 123 4567" required><br><br>
+                    
+                    <!-- Email -->
+                    <label for="email">Email :</label><br>
+                    <input type="email"  id="email" name="email" placeholder="user@example.com" required><br><br>
+
+                    <!-- gender -->
+                    <p>Gender :</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" >Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" >Female</label><br><br>
+
+                    <!-- country -->
+                    <label for="country"> Country :</label><br>
+                    <select id="country" name="country">
+                        <option value="sa">Saudi Arabia</option>
+                        <option value="eg">Egypt</option>
+                        <option value="em">United Arab Emirates</option>
+                        <option value="qa">Qatar</option>
+                    </select><br><br>
+
+                    <!-- date -->
+                    <label for="date">Select date :</label><br>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <!-- send button -->
+                    <input type="submit" value="Complete Registration">
+
+                    <!-- reset button -->
+                    <input type="reset" value="Reset Form">
+
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact suction -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions about the events?</p>
+            <p>
+                Email: <a href="mailto:reeeez191@outlook.com">Send an Email</a>
+                Phone: <a href="tel">Call us</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2026 Remaz Faisal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
